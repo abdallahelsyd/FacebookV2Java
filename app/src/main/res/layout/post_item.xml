@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/linear"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/userIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        tools:layout_editor_absoluteX="336dp"
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+        <TextView
+            android:id="@+id/bodyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintStart_toStartOf="@id/linear"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
